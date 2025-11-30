@@ -79,7 +79,36 @@ h4 { font-size: 1.3rem; }
     background: linear-gradient(135deg, var(--primary), var(--accent));
     border-radius: 2px;
 }
+/* ===== FOUNDER PROFILE PICTURE STYLES ===== */
+.founder-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--primary);
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition);
+}
 
+.founder-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive for founder photo */
+@media (max-width: 768px) {
+    .founder-photo {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .founder-photo {
+        width: 200px;
+        height: 200px;
+    }
+}
 /* ===== BUTTONS ===== */
 .btn {
     display: inline-flex;
